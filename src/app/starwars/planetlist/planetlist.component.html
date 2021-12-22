@@ -2,8 +2,7 @@
 <h1 class="mt-5">Listado de Planetas</h1>
 <table class="table">
     <thead>
-        <tr>
-            <th [ngStyle]="{ 'width': '100px' }">#</th>
+        <tr>            
             <th [ngStyle]="{ 'width': '150px' }">Nombre</th>
             <th>Gravedad</th>
             <th>Clima</th>
@@ -13,8 +12,9 @@
     <tbody>
         <tr *ngFor="let planet of planets"
             [ngStyle]="{ 'height': '100px'}">
-            <td>{{ planet }}</td>
-            <td></td>
+            <td>{{ planet.name }}</td>
+            <td>{{ planet.gravity }}</td>
+            <td>{{ planet.climate }}</td>
             
         </tr>
     </tbody>

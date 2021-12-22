@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { FetchAllDataPlanets, DataPlanets } from '../interfaces/starwars.interfaces';
+import { FetchAllDataPlanets,BigDataPlanets} from '../interfaces/starwars.interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +15,7 @@ export class StarwarsService {
   //Observable, regresa la informacion cuando alguien se suscriba
   getPlanets(){
     /*return this.http.get<FetchAllDataPlanets>(this.url)*/
-    return this.http.get<DataPlanets>(this.url)
+    return this.http.get<BigDataPlanets>(`${this.url}/?page=2`)
   }
 
 }

@@ -5,10 +5,10 @@ export interface FetchAllDataPlanets {
     count:    number;
     next:     string;
     previous: null;
-    results:  DataPlanets[];
+    results:  BigDataPlanets[];
 }
 
-export interface DataPlanets {
+export interface BigDataPlanets {
     name:            string;
     rotation_period: string;
     orbital_period:  string;
@@ -25,3 +25,8 @@ export interface DataPlanets {
     url:             string;
 }
 
+/* export interface SmallDataPlanets {
+    name:            string;
+    climate:         string;
+    gravity:         string;
+} */
