@@ -13,9 +13,13 @@ export class StarwarsService {
   constructor(private http: HttpClient) { }
 
   //Observable, regresa la informacion cuando alguien se suscriba
-  getPlanets(){
+  //Asigno un valor numerico por cada pagina
+  getPlanets(pageNumber:Number){
     /*return this.http.get<FetchAllDataPlanets>(this.url)*/
-    return this.http.get<BigDataPlanets>(`${this.url}/?page=2`)
+    /*const url = this.url+pageNumber;*/
+    return this.http.get<BigDataPlanets>(`${this.url}/?page=${pageNumber}`)
+    
+    
   }
 
 }

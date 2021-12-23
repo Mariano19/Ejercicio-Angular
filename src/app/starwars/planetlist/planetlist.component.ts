@@ -11,33 +11,38 @@ export class PlanetlistComponent implements OnInit {
 
   //creo nuevo array para utilizarlo publico
   public planets: BigDataPlanets[] = [];
+  public page: number = 1;
+  public validation: any;
 
   //Traigo la variable del service
   constructor( private starwarsService: StarwarsService) { }
 
   ngOnInit(): void {
 
-    //Suscribo al servicio para utilizarlo
-    this.starwarsService.getPlanets()
+    //Suscribo al servicio para utilizarlo y paso el valor de la pagina  
+    this.starwarsService.getPlanets(this.page)
       .subscribe( (dataPlanets: any) =>{        
         this.planets = dataPlanets.results
-    });
-
-    /*   //Suscribo al servicio para utilizarlo
-    this.starwarsService.getPlanets()
-    .subscribe( (dataPlanets: any) =>{
-      
-      this.planets = dataPlanets;
-
-      console.log(this.planets);
-      console.log(dataPlanets.next);
-      
-      
-      /* console.log(resp.results);
-      console.log(resp.next);
-      console.log(resp.count);
-      console.log(resp.previous); 
-    }); */
+        this.validation = dataPlanets.next
+        /* console.log(this.validation) */
+        
+    });    
   }
+  
 
+  //Metodos de paginacion
+  nextPage(){
+    if(this.validation != null){
+      this.page +=1;
+    }  
+    this.ngOnInit();
+    console.log(this.page)
+    
+  }
+  prevPage(){
+    if(this.page>1)
+      this.page -=1;
+      this.ngOnInit();  
+      console.log(this.page)    
+  }
 }
