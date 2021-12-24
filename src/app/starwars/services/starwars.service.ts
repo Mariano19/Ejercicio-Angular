@@ -19,7 +19,7 @@ export class StarwarsService {
     /*const url = this.url+pageNumber;*/
     return this.http.get<BigDataPlanets>(`${this.url}/?page=${pageNumber}`)
     
-    
+    /*j*/ 
   }
 
 }

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StarwarsService } from '../../services/starwars.service';
 import { FetchAllDataPlanets,BigDataPlanets} from '../../interfaces/starwars.interfaces';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { CardsComponent } from '../cards/cards.component';
 
 
@@ -19,10 +18,7 @@ export class PlanetlistComponent implements OnInit {
   public validation: any;
 
   //Traigo la variable del service
-  constructor( 
-    private starwarsService: StarwarsService,
-    public dialog :MatDialog
-    ) {
+  constructor(private starwarsService: StarwarsService) {
     
    }
 
@@ -55,12 +51,7 @@ export class PlanetlistComponent implements OnInit {
       console.log(this.page)    
   }
 
-  openDialog():void{
-    const dialogRef = this.dialog.open(CardsComponent, {});
-    dialogRef.afterClosed().subscribe(resp =>{
-      console.log(resp);
-    });
-  }
+  
 
 
   

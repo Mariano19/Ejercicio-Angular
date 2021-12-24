@@ -3,23 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
+
 import { HttpClientModule } from '@angular/common/http';
-import { ItemsComponent } from './components/items/items.component';
+
 import { StarwarsModule } from './starwars/starwars.module';
+import { HeaderComponent } from './starwars/components/header/header.component';
+import { CardsComponent } from './starwars/components/cards/cards.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ItemsComponent    
+    CardsComponent   
   ],
   imports: [
-    StarwarsModule,
+    
     BrowserModule,
     AppRoutingModule,    
-    HttpClientModule    
+    HttpClientModule,
+    StarwarsModule   
 
   ],
   providers: [],
