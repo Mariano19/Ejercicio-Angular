@@ -12,3 +12,7 @@ tbody td{
 .list__table--content th{
     width: 400px;
 }
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
