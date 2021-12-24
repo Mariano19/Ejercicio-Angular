@@ -1,0 +1,39 @@
+<!-- Estructura lista de planetas -->
+<div class="list container">
+    <div class="list__tittle">
+        <h1 class="mt-5">Listado de Planetas</h1>
+    </div>
+
+    <table class="list__table table table-striped">
+        <thead class="list__table--content">
+            <tr>
+                <th>Nombre</th>
+                <th>Gravedad</th>
+                <th>Clima</th>
+                <th>Detalles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let planet of planets">
+                <td>{{ planet.name }}</td>
+                <td>{{ planet.gravity }}</td>
+                <td>{{ planet.climate }}</td>
+                <td><button class="btn btn-secondary" (click)="prevPage()">Ver mas</button></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <div class="list__buttons">
+        <button class="btn btn-primary" (click)="prevPage()" [disabled]="page === 1">
+            Anterior
+        </button>
+
+        <button class="btn btn-primary" (click)="nextPage()" [disabled]="valid
+    
+    
+        
+    
+
+
+</div>
