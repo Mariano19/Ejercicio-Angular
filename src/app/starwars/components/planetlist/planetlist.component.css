@@ -1,6 +1,6 @@
 .list__buttons{
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 tbody td{
     height: 60px;
