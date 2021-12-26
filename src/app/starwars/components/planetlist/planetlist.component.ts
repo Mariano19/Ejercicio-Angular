@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { StarwarsService } from '../../services/starwars.service';
 import { FetchAllDataPlanets,BigDataPlanets} from '../../interfaces/starwars.interfaces';
-import { CardsComponent } from '../cards/cards.component';
+import { ModalComponent } from '../modal/modal.component';
+
 
 
 
 @Component({
   selector: 'app-planetlist',
   templateUrl: './planetlist.component.html',
-  styleUrls: ['./planetlist.component.css']
+  styleUrls: ['./planetlist.component.css'],
+  providers: [ModalComponent]
 })
 export class PlanetlistComponent implements OnInit {
 
@@ -54,7 +56,9 @@ export class PlanetlistComponent implements OnInit {
   
 
 
-  
+  open(content:any) {
+    /* this.modalService.open(content); */
+  } 
 
 
 

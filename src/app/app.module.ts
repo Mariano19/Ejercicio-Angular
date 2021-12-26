@@ -8,14 +8,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { StarwarsModule } from './starwars/starwars.module';
 import { HeaderComponent } from './starwars/components/header/header.component';
-import { CardsComponent } from './starwars/components/cards/cards.component';
+import { ModalComponent } from './starwars/components/modal/modal.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    CardsComponent   
+    HeaderComponent
+    
+       
   ],
   imports: [
     
