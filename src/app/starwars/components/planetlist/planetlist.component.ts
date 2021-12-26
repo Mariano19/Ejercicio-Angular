@@ -53,14 +53,5 @@ export class PlanetlistComponent implements OnInit {
       console.log(this.page)    
   }
 
-  
-
-
-  open(content:any) {
-    /* this.modalService.open(content); */
-  } 
-
-
-
 
 }

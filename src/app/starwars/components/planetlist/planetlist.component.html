@@ -18,7 +18,16 @@
                 <td>{{ planet.name }}</td>
                 <td>{{ planet.gravity }}</td>
                 <td>{{ planet.climate }}</td>
-                <td><app-modal></app-modal></td>
+                <td><app-modal 
+                    [tittle]="planet.name"
+                    [gravity]="planet.gravity"
+                    [climate]="planet.climate"
+                    [diameter]="planet.diameter"
+                    [terrain]="planet.terrain"
+                    [population]="planet.population"
+                    [created]="planet.created" 
+                    [rotation]="planet.rotation_period" 
+                    ></app-modal></td>
                 <!-- <td><button class="btn btn-outline-secondary" (click)="open(content)">Ver mas</button></td> -->
             </tr>
         </tbody>
