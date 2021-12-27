@@ -2,7 +2,7 @@
 
 
   <div class="modal-header card text-white bg-primary mb-3">
-    <h4 class="modal-title" id="modal-basic-title">Planeta {{tittle}}</h4>
+    <h4 class="modal-title" id="modal-basic-title">PLANETA {{tittle | uppercase}}</h4>
     
   </div>
   <div class="modal-body">
@@ -19,7 +19,7 @@
         </tr>
         <tr>
           <th>Diametro</th>
-          <td>{{diameter}}</td>
+          <td>{{diameter | number}}</td>
         </tr>
         <tr>
           <th>Terreno</th>
@@ -27,11 +27,11 @@
         </tr>
         <tr>
           <th>Habitantes</th>
-          <td>{{population}}</td>
+          <td>{{population | number}}</td>
         </tr>
         <tr>
           <th>Creacion</th>
-          <td>{{created}}</td>
+          <td>{{created | date}}</td>
         </tr>
         <tr>
           <th>Rotacion</th>

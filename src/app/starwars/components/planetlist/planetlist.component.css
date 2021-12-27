@@ -1,4 +1,5 @@
-.list__buttons{
+.list__buttons button{
+    margin: 5px;
     /* display: flex; */
     /* justify-content: space-evenly; */
 }
