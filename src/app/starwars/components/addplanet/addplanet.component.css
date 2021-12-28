@@ -1,0 +1,30 @@
+.addNew__tittle{
+    
+    height: 7vw;
+
+    background-color: #eb686470;
+    /* background-color: #c7c7c7e6; */
+
+}
+
+.addNew__tittle h1{
+    color: white;
+    padding-left: 13%;
+    padding-top: 2.2%;
+
+    /* padding-left: 14%;
+    padding-top: 2.2%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 5vw; */
+}
+
+.addNew__main {
+    width: 30rem;
+}
+
+.addNew__main  button{
+    width: -webkit-fill-available;
+    margin-top: 10%;
+}
+

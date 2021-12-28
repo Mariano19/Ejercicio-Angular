@@ -25,8 +25,8 @@ export interface BigDataPlanets {
     url:             string;
 }
 
-/* export interface SmallDataPlanets {
+export interface SmallDataPlanetsLocal {
     name:            string;
     climate:         string;
     gravity:         string;
-} */
+} 
