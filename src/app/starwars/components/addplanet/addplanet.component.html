@@ -1,28 +1,26 @@
+
 <div class="addNew">
-    <div class="addNew__tittle">
-        <h1>Nuevo Planeta</h1>
+    <div class="addNew__card card">
+        <div class="addNew__card__tittle">
+            <h1>Nuevo Planeta</h1>
+        </div>
+        
+        <div class="addNew__card__form">
+            <form (submit)="addPlanet(name, gravity, climate)">
+                <div class="form-group">
+                    <label class="col-form-label mt-4" for="inputDefault">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Hoth" #name id="inputDefault">
+                    <label class="col-form-label mt-4" for="inputDefault">Gravedad</label>
+                    <input type="text" class="form-control" placeholder="1" #gravity id="inputDefault">
+                    <label class="col-form-label mt-4" for="inputDefault">Clima</label>
+                    <input type="text" class="form-control" placeholder="Frozen" #climate id="inputDefault">
+                </div>
+                <button class="btn btn-lg btn-primary btn-block">
+                    Agregar
+                </button>
+            </form>
+        </div>
     </div>
-    <div class="addNew__main container">
-        <form (submit)="addPlanet(name, gravity, climate)">
-            <div class="form-group">
-                <label class="col-form-label mt-4" for="inputDefault">Nombre</label>
-                <input type="text" class="form-control" placeholder="Hoth" #name id="inputDefault">
-                <label class="col-form-label mt-4" for="inputDefault">Gravedad</label>
-                <input type="text" class="form-control" placeholder="1" #gravity id="inputDefault">
-                <label class="col-form-label mt-4" for="inputDefault">Clima</label>
-                <input type="text" class="form-control" placeholder="Frozen" #climate id="inputDefault">
-            </div>
-            <button class="btn btn-lg btn-primary btn-block">
-                Agregar
-            </button>
-        </form>
-        
-
-
-
-        
-        
-
-    </div>
-
+    
+    
 </div>

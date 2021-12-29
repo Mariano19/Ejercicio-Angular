@@ -1,16 +1,29 @@
-.addNew__tittle{
-    
-    height: 7vw;
+.addNew{    
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
 
-    background-color: #eb686470;
+.addNew__card{
+    width: fit-content;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+.addNew__card__tittle{
+    
+    /* height: 7vw;
+
+    background-color: #eb686470; */
     /* background-color: #c7c7c7e6; */
 
 }
 
-.addNew__tittle h1{
-    color: white;
+.addNew__card__tittle h1{
+    /* color: white;
     padding-left: 13%;
     padding-top: 2.2%;
+    width: fit-content; */
 
     /* padding-left: 14%;
     padding-top: 2.2%;
@@ -19,11 +32,11 @@
     font-size: 5vw; */
 }
 
-.addNew__main {
+.addNew__card__form {
     width: 30rem;
 }
 
-.addNew__main  button{
+.addNew__card__form  button{
     width: -webkit-fill-available;
     margin-top: 10%;
 }

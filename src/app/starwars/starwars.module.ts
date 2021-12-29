@@ -4,6 +4,7 @@ import { PlanetlistComponent } from './components/planetlist/planetlist.componen
 import { ModalComponent } from './components/modal/modal.component';
 import { AddplanetComponent } from './components/addplanet/addplanet.component';
 import { StarwarsService } from './services/starwars.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -14,18 +15,18 @@ import { StarwarsService } from './services/starwars.service';
   declarations: [
     PlanetlistComponent,
     ModalComponent,
-    AddplanetComponent
-    
+    AddplanetComponent 
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgbModule
+    
   ],
   providers: [
-    StarwarsService
+    StarwarsService    
   ],
   exports:[
-    PlanetlistComponent
-    
+    PlanetlistComponent    
   ]
 
 })
