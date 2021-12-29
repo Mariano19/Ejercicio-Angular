@@ -3,12 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppModule } from './app.module';
 import { AddplanetComponent } from './starwars/components/addplanet/addplanet.component';
-import { PlanetlistComponent } from './starwars/components/planetlist/planetlist.component';
+import { PlanetListComponent } from './starwars/components/planetList/planetList.component';
 
 const routes: Routes = [
 {
   path: '',
-  component: PlanetlistComponent
+  component: PlanetListComponent
 },  
 {
   path: 'add',

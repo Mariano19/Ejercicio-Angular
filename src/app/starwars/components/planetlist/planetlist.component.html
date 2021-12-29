@@ -1,4 +1,5 @@
 <!-- Estructura lista de planetas -->
+
 <div class="list__tittle">
     <h1>Listado de Planetas</h1>
 </div>
@@ -22,20 +23,20 @@
                 <td>{{ planet.name }}</td>
                 <td>{{ planet.gravity }}</td>
                 <td>{{ planet.climate }}</td>
-                <td><app-modal 
-                    [tittle]="planet.name"
+                <td>
+                    <app-modal 
+                    [title]="planet.name"
                     [gravity]="planet.gravity"
                     [climate]="planet.climate"
                     [diameter]="planet.diameter"
                     [terrain]="planet.terrain"
                     [population]="planet.population"
                     [created]="planet.created" 
-                    [rotation]="planet.rotation_period" 
-                    ></app-modal></td>
-                <!-- <td><button class="btn btn-outline-secondary" (click)="open(content)">Ver mas</button></td> -->
+                    [rotation]="planet.rotation_period">
+                    </app-modal>
+                </td>
             </tr>
         </tbody>
-
     </table>
 
     <div class="list__buttons">
@@ -47,10 +48,4 @@
             Siguiente
         </button>
     </div>
-    
-    
-        
-    
-
-
 </div>

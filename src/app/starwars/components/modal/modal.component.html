@@ -1,13 +1,12 @@
+<!-- Estructura Modal -->
 <ng-template #content let-c="close" let-d="dismiss">
-
-
   <div class="modal-header card text-white bg-primary mb-3">
-    <h4 class="modal-title" id="modal-basic-title">PLANETA {{tittle | uppercase}}</h4>
-    
+    <h4 class="modal-title" id="modal-basic-title">PLANETA {{title | uppercase}}</h4>
   </div>
+
   <div class="modal-body">
     <table class="table table">
-      
+
       <tbody>
         <tr>
           <th>Gravedad</th>
@@ -38,15 +37,16 @@
           <td>{{rotation}}</td>
         </tr>
       </tbody>
+
     </table>
-    
+
   </div>
   <div class="modal-footer">
     <button type="button" class="close btn btn-lg btn-outline-primary" aria-label="Close" (click)="d('Cross click')">
       Volver
     </button>
-
   </div>
+
 </ng-template>
 
 

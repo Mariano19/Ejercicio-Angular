@@ -1,28 +1,16 @@
-.list__tittle{
-    
+.list__tittle{    
     height: 7vw;
-
-    background-color: #eb686470;
-    /* background-color: #c7c7c7e6; */
-
+    background-color: #eb686470;    
 }
 
 .list__tittle h1{
     color: white;
     padding-left: 13%;
     padding-top: 2.2%;
-
-    /* padding-left: 14%;
-    padding-top: 2.2%;
-    text-transform: uppercase;
-    color: white;
-    font-size: 5vw; */
 }
 
 .list__buttons button{
-    margin: 5px;
-    /* display: flex; */
-    /* justify-content: space-evenly; */
+    margin: 5px;    
 }
 tbody td{
     height: 60px;
@@ -35,6 +23,3 @@ tbody td{
     width: 400px;
 }
 
-/* h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} */

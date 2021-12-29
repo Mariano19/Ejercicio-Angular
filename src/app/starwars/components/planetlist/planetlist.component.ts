@@ -26,6 +26,9 @@ export class PlanetlistComponent implements OnInit {
 
   ngOnInit(): void {
 
+    //TODO: agregar para manejar errores, si no lo puedo solucionar aclararlo para mejorar
+    //TODO: boolean de spiner mientras carga la lista
+
     //Suscribo al servicio para utilizarlo y paso el valor de la pagina  
     this.starwarsService.getPlanets(this.page)
       .subscribe( (dataPlanets: any) =>{        
@@ -33,7 +36,7 @@ export class PlanetlistComponent implements OnInit {
         this.validation = dataPlanets.next
         /* console.log(this.validation) */
         
-    });    
+    });    //TODO: .catch para mostrar el error si no carga y algun boton para volver a
   }
   
 
