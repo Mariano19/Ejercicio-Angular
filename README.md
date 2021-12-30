@@ -1,4 +1,21 @@
-# EjercicioAngular
+# EjercicioAngular - Mariano Quattrocchi
+
+
+Instructions to runs properly this project:
+
+Clone repository
+Run 'npm install' to install all the necesary dependencies described in package.json
+Run 'ng serve' to run the server 
+
+
+
+In addition to the native angular dependencies i used bootstrap and bootswatch to apply the general styles
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
