@@ -11,7 +11,7 @@ export class StarwarsService {
 
   //URL de la api
   private url: string = 'https://swapi.dev/api/planets/';
-
+  
 
   //Observable, regresa la informacion cuando alguien se suscriba
   //Asigno un valor numerico por cada pagina
@@ -24,20 +24,16 @@ export class StarwarsService {
   
 
   //Creo un array local para guardar los planetas y luego guardarlos en el localstorage
-  getLocalPlanets() {
-    let localStoragePlanetsString = localStorage.getItem('planets') || '{}';
+  getLocalPlanets() {  
+    let localStoragePlanetsString = localStorage.getItem('planets') || '[]';
     console.log(JSON.parse(localStoragePlanetsString))
-    return JSON.parse(localStoragePlanetsString);
-    
+    return JSON.parse(localStoragePlanetsString);       
   }
 
   addLocalPlanets(planet: SmallDataPlanetsLocal) {
-    let planetsLocal = this.getLocalPlanets();
+    let planetsLocal = this.getLocalPlanets();       
     planetsLocal.push(planet);
     localStorage.setItem('planets', JSON.stringify(planetsLocal));
     return false;    
   }
-
-
-
 }

@@ -1,4 +1,4 @@
-<!-- Estructura Agregar Planeta -->
+<!-- Estructura Agregar planetas -->
 <div class="addNew">
     <div class="addNew__card card">
         <div class="addNew__card__tittle">
@@ -21,4 +21,37 @@
             </form>
         </div>
     </div>
+
+    <!-- Estructura mostrar planetas -->
+    <div class="result">
+        <div class="result__main" *ngFor="let planet of localPlanets">
+            <div class="result__card card">                
+                <tbody>
+                    <tr>
+                        <th><h1>Planeta</h1></th>
+                        <td>{{planet.name |uppercase}}</td>
+                    </tr>
+                    <hr/>
+                    <div class="result__card--data">
+                        <tr>
+                            <th>Gravedad</th>
+                            <td>{{planet.gravity |uppercase}}</td>
+                        </tr>
+                        <tr>
+                            <th>Clima</th>
+                            <td>{{planet.climate |uppercase}}</td>
+                        </tr>
+                    </div>                    
+                </tbody>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 </div>

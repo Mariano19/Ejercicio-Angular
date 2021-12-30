@@ -1,8 +1,6 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { AppModule } from './app.module';
-import { AddplanetComponent } from './starwars/components/addplanet/addplanet.component';
+import { AddPlanetComponent } from './starwars/components/addPlanet/addPlanet.component';
 import { PlanetListComponent } from './starwars/components/planetList/planetList.component';
 
 const routes: Routes = [
@@ -12,7 +10,7 @@ const routes: Routes = [
 },  
 {
   path: 'add',
-  component: AddplanetComponent
+  component: AddPlanetComponent
 }  
 ];
 
