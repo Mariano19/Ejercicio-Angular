@@ -4,7 +4,9 @@
 Instructions to runs properly this project:
 
 Clone repository.
+
 Run 'npm install' to install all the necesary dependencies described in package.json.
+
 Run 'ng serve' to run the server.
 
 
