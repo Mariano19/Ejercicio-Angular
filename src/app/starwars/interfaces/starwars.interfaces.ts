@@ -23,6 +23,7 @@ export interface BigDataPlanets {
     url:             string;
 }
 
+// Podriamos reutilizar la interface BigDataPlanets y hacer uso del operador ? (optional)
 export interface SmallDataPlanetsLocal {
     name:            string;
     climate:         string;

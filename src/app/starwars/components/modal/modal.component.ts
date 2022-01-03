@@ -9,6 +9,7 @@ import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalComponent implements OnInit {
   
+  // Aca seria mejor tener directamente el objeto en cuetsion mediante un solo input plant: BigDataPlant
   @Input() title = '';
   @Input() gravity = '';
   @Input() climate = '';
@@ -19,6 +20,7 @@ export class ModalComponent implements OnInit {
   @Input() rotation = '';
 
   constructor(config: NgbModalConfig, private modalService: NgbModal) {
+    // Para establecer la configuracion del modal en el momento de abrirlo deberiamos pasar los parametros como config del metodo open
     config.backdrop = 'static';
     config.keyboard = false;
   }

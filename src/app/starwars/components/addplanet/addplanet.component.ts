@@ -19,6 +19,7 @@ export class AddPlanetComponent implements OnInit {
 
   ngOnInit(): void {
     this.localPlanets =  this.StarwarsService.getLocalPlanets();
+    // No se inicializa el formulario de modo que luego de agregar un planeta el mismo se limpie.
   }
 
   //Metodo para guardar los planetas usando el servicio y la interfaz creadas
