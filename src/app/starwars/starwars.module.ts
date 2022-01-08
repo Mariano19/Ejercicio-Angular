@@ -23,6 +23,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     
   ],
   providers: [
+    // No hace falta definirlo aca ya que se hace uso de "providedIn: 'root'"
     StarwarsService    
   ],
   exports:[
